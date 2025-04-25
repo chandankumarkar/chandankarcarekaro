@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareKaro - Healthcare Supply Chain</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 70px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db !important;
+        }
+        .jumbotron {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 0;
+            margin-bottom: 40px;
+        }
+        .feature-box {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        .section-title {
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        .btn-success {
+            background-color: #2ecc71;
+            border-color: #2ecc71;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">CareKaro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#register" class="btn btn-primary" style="margin-top: 8px; padding: 5px 15px; color: white;">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Connecting Pharmacies with Manufacturers</h1>
+            <p>Streamlining healthcare supply chain for better accessibility and affordability</p>
+            <p>
+                <a href="#register-pharmacy" class="btn btn-success btn-lg">Register as Pharmacy</a>
+                <a href="#register-manufacturer" class="btn btn-primary btn-lg">Register as Manufacturer</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-title text-center">About CareKaro</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Our Mission</h3>
+                <p>CareKaro aims to revolutionize the healthcare supply chain by creating a direct connection between pharmacies and pharmaceutical manufacturers, eliminating middlemen and reducing costs.</p>
+                <p>We believe in making healthcare more accessible and affordable for everyone by optimizing the distribution network and ensuring timely delivery of essential medicines.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Vision</h3>
+                <p>To create a seamless ecosystem where pharmacies can directly source medicines from manufacturers, ensuring authenticity, reducing costs, and improving availability of critical medications.</p>
+                <p>We envision a future where no patient has to suffer due to unavailability or high costs of essential medicines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container">
+        <h2 class="section-title text-center">Key Features</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-shopping-cart feature-icon"></span>
+                    <h3>Direct Ordering</h3>
+                    <p>Place orders directly with manufacturers without any intermediaries, ensuring better prices and authentic products.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-time feature-icon"></span>
+                    <h3>Real-time Tracking</h3>
+                    <p>Track your orders in real-time from manufacturing to delivery, ensuring complete transparency.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-usd feature-icon"></span>
+                    <h3>Competitive Pricing</h3>
+                    <p>Get the best prices directly from manufacturers with bulk ordering options and seasonal discounts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-ok-circle feature-icon"></span>
+                    <h3>Quality Assurance</h3>
+                    <p>All products on our platform are verified for authenticity and quality standards.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-stats feature-icon"></span>
+                    <h3>Inventory Management</h3>
+                    <p>Smart inventory management system to help pharmacies maintain optimal stock levels.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box text-center">
+                    <span class="glyphicon glyphicon-education feature-icon"></span>
+                    <h3>Training & Support</h3>
+                    <p>Comprehensive training and 24/7 support for all platform users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="container">
+        <h2 class="section-title text-center">How It Works</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>For Pharmacies</h3>
+                <ol class="list-group">
+                    <li class="list-group-item">Register your pharmacy on CareKaro</li>
+                    <li class="list-group-item">Browse through verified manufacturers and their products</li>
+                    <li class="list-group-item">Place orders directly with manufacturers</li>
+                    <li class="list-group-item">Track your orders in real-time</li>
+                    <li class="list-group-item">Receive deliveries and manage inventory</li>
+                </ol>
+                <p class="text-center">
+                    <a href="#register-pharmacy" class="btn btn-success">Register as Pharmacy</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3>For Manufacturers</h3>
+                <ol class="list-group">
+                    <li class="list-group-item">Register your manufacturing unit on CareKaro</li>
+                    <li class="list-group-item">List your products with detailed information</li>
+                    <li class="list-group-item">Receive orders directly from pharmacies</li>
+                    <li class="list-group-item">Process orders and arrange for delivery</li>
+                    <li class="list-group-item">Manage payments and grow your network</li>
+                </ol>
+                <p class="text-center">
+                    <a href="#register-manufacturer" class="btn btn-primary">Register as Manufacturer</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container">
+        <h2 class="section-title text-center">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"CareKaro has transformed how we source medicines. We've reduced our procurement costs by 15% and improved our inventory management significantly."</p>
+                    <p><strong>- Rajesh Kumar, MediCare Pharmacy, Delhi</strong></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <p>"As a manufacturer, CareKaro has helped us reach pharmacies directly. Our distribution network has expanded by 40% in just 6 months."</p>
+                    <p><strong>- Priya Sharma, HealthFirst Pharmaceuticals, Mumbai</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Get in Touch</h3>
+                <p><span class="glyphicon glyphicon-map-marker"></span> 123 Healthcare Avenue, New Delhi, India</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +91 9289036219</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> info@carekaro.com</p>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-globe"></span> Facebook</a>
+                    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-globe"></span> Twitter</a>
+                    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-globe"></span> LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>CareKaro</h3>
+                    <p>Bridging the gap between pharmacies and manufacturers for a healthier tomorrow.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            	                            @2025 CareKaro by CHANDAN KUMAR KAR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
